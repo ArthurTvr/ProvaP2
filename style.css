@@ -1,0 +1,365 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* -----------------------------------QUESTÃO 1--------------------------------------------- */
+
+.section-container {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.titleq1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 172px;
+}
+
+.section-container div {
+    margin: 1px;
+    padding: 1px;
+}
+
+#rg {
+    margin-left: 37px;
+    border: 1px solid #eaeaea;
+}
+
+#cpf {
+    margin-left: 131px;
+    border: 1px solid #eaeaea;
+}
+
+#nome {
+    margin-left: 21px;
+    border: 1px solid #eaeaea;
+}
+
+#ende {
+    border: 1px solid #eaeaea;
+}
+
+#sexo {
+    margin-left: 30px;
+    border: 1px solid #eaeaea;
+}
+
+#data {
+    margin-left: 48px;
+    border: 1px solid #eaeaea;
+}
+
+.div-button1 input {
+    width: 100%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+/* ---------------------------------QUESTÃO 2---------------------------------------- */
+
+.container h1{
+    color: green;
+}
+.container p{
+    margin: 2px;
+}
+.divq2{
+    margin-left: 95px;
+}
+.input-block {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.input-block label {
+    width: 50px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+button {
+    margin-left: 100px;
+}
+
+.container {
+    width: fit-content;
+    margin: 0 auto;
+}
+.butrest{
+    margin-left: 328px;
+}
+/* ---------------------------------QUESTÃO 3---------------------------------------- */
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana;
+    font-size: 12px;
+    line-height: 2px;
+    color: red;
+}
+
+/* ----------------------------Questão 4 -------------------- */
+
+.table4 {
+    font-family: Arial;
+    font-size: 12px;
+    width: 600px;
+}
+
+.title {
+    background-color: #0D5188;
+    color: white;
+    width: 600px;
+    margin: 0;
+}
+
+.azul-claro {
+    background-color: #66C5E3;
+}
+
+#position {
+    background-color: #f7f7f7;
+}
+
+#citys {
+    background-color: #C7E7F3;
+    color: #0D5188;
+}
+
+/* ----------------------QUESTÂO 5 --------------------- */
+
+.table5 {
+    margin: 30px 0px 5px 0px;
+    border-collapse: collapse;
+    border: 1px solid #dddddd;
+}
+
+.table5 tr {
+    border: 1px solid #dddddd;
+}
+
+.table5 tr td {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#cinzinha {
+    background-color: #F7F7F7;
+    color: #9c9c9c;
+}
+
+#g3 {
+    color: #003366;
+    text-align: left;
+}
+
+#p4 {
+    color: #1398BE;
+    text-align: left;
+}
+
+#p5-12 {
+    color: #DE9800;
+    text-align: left;
+}
+
+#p13-16 {
+    color: #CCCCCC;
+    text-align: left;
+}
+
+#p17-20 {
+    color: red;
+    text-align: left;
+}
+
+#name-time {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #666666;
+    font-weight: bold;
+}
+
+.gray {
+    background-color: #f7f7f7;
+}
+
+.classification {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Pontos {
+    font-weight: bold;
+    text-align: center;
+}
+
+.legenda1 {
+    width: 10px;
+    height: 10px;
+    background-color: #003366;
+}
+
+.legenda2 {
+    width: 10px;
+    height: 10px;
+    background-color: #1398BE;
+}
+
+.legenda3 {
+    width: 10px;
+    height: 10px;
+    background-color: #DE9800;
+}
+
+.legenda4 {
+    width: 10px;
+    height: 10px;
+    background-color: #C91B04;
+}
+
+.legenda-container {
+    display: flex;
+    align-items: left;
+    color: #9c9c9c;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.legenda-container div {
+    margin: 0px 5px 0px 5px;
+    border-radius: 2px;
+}
+
+/* ----------------------------------------- 6 ----------------------------*/
+
+.nav-container {
+    background-color: rgb(146, 146, 146);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-container ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-button {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.submenu-container {
+    position: absolute;
+    top: 60px;
+    /* display: flex; */
+    flex-direction: column;
+    display: none;
+}
+
+.submenu-container a {
+    margin: 5px;
+    width: 141px;
+    font-size: 35px;
+    padding: 10px;
+    color: #eaeaea;
+    border-bottom: 1px solid #aeaeae;
+    background-color: #cccccc;
+    transition: 0.3s;
+}
+
+.submenu-container a:hover {
+    background-color: rgb(0, 162, 255);
+}
+
+/* ------------------------------------------------------Questão 7 ------------------------------ */
+
+.form-title {
+    margin-top: 30px;
+}
+
+.question7-container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border: 1px solid #c0c0c0;
+    width: 600px;
+    margin-top: 30px;
+}
+
+.question7-container div {
+    padding: 5px;
+}
+
+.question7-container input {
+    background-color: #eaeaea;
+    border-radius: 40px;
+    border: none;
+}
+
+.question7-container input:hover {
+    background-color: #dddddd;
+}
+
+.alin {
+    margin-left: 130px;
+}
+
+.alin1 {
+    margin-left: 35px;
+}
+
+.senha {
+    margin-left: 120px;
+}
+
+.estado {
+    margin-left: 115px;
+}
+
+.title-info {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.form-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+#buttons-reset {
+    width: 292px;
+    font-size: 15px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Questão 1</title>
+</head>
+
+<body>
+    <section class="section-container">
+        <h2 class="titleq1">Ficha Cadastral</h2>
+
+        <div>
+            <form action="">
+                <label for="Nome" class=>Nome:</label>
+                <input type="text" nome="nome" size="55" id="nome" />
+        </div>
+
+        <div>
+            <label for="RG">RG:</label>
+            <input type="text" nome="RG" size="13" id="rg" />
+            <label for="cpf">CPF:</label>
+            <input type="text" nome="cpf" size="13" id="cpf" />
+        </div>
+        <div>
+            <label for="endereço">Endereço:</label>
+            <input type="text" nome="endereço" size="55" id="ende" />
+        </div>
+        <div>
+            <label>Sexo:</label>
+            <select id="sexo" name="" id="">
+                <option value="">Masculino</option>
+                <option value="AC">Feminino</option>
+        </div>
+        </select>
+        <label for="data">Data de Nascimento:</label>
+        <input type="date" nome="data" size="15" id="data" />
+        <div>
+            <p>Situação Civíl:
+                <input type="checkbox" name="solteiro">
+                <label for="solteiro">Solteiro(a)</label>
+                <input type="checkbox" name="casado">
+                <label for="casado">Casado(a)</label>
+                <input type="checkbox" name="viuvo">
+                <label for="viuvo">Viúvo(a)</label>
+            </p>
+        </div>
+        <div class="div-button1">
+            <p>
+                <input type="reset" value="Limpar" />
+            </p>
+            </form>
+    </section>
+</body>
+
+<script>
+
+    const solteiro = document.querySelector('input[name="solteiro"]')
+    const casado = document.querySelector('input[name="casado"]')
+    const viuvo = document.querySelector('input[name="viuvo"]')
+
+    solteiro.onclick = () => {
+        casado.checked = false
+        viuvo.checked = false
+    }
+    casado.onclick = () => {
+        solteiro.checked = false
+        viuvo.checked = false
+    }
+    viuvo.onclick = () => {
+        casado.checked = false
+        solteiro.checked = false
+    }
+
+</script>
+
+</html>

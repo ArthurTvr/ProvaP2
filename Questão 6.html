@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Questão 6</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+            <ul>
+                <div class="nav-button">
+                    <span>Home</span>
+                </div>
+                <div class="nav-button submenu">
+                    <span>Questões</span>
+                    <div class="submenu-container">
+                        <a href="Questão1.html">Questão 1</a>
+                        <a href="Questão2.html">Questão 2</a>
+                        <a href="Questão3.html">Questão 3</a>
+                        <a href="Questão4.html">Questão 4</a>
+                        <a href="Questão5.html">Questão 5</a>
+                        <a href="Questão 6.html">Questão 6</a>
+                        <a href="Questão7.html">Questão 7</a>
+                        <a href="Questão8.html">Questão 8</a>
+                    </div>
+                </div>
+                <div class="nav-button">
+                    <span>Company</span>
+                </div>
+                <div class="nav-button">
+                    <span>Contact</span>
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+
+<script>
+    var navbutton = document.querySelector('.submenu')
+    var submenu = document.querySelector('.submenu-container')
+    navbutton.addEventListener('mouseover', onHover)
+    submenu.addEventListener('mouseout', onMouseOut)
+
+    function onHover() {
+        submenu.style.display = 'flex'
+    }
+
+    function onMouseOut() {
+        submenu.style.display = 'none'
+    }
+</script>
+
+</html>

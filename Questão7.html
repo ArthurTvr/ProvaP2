@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Questão 7</title>
+</head>
+
+<body>
+    <p class="form-title">FORMULÁRIOS - Coleta de Informações Pessoais</p>
+    <div class="question7-container">
+        <div class="title-info">
+            <p>Informações Pessoais</p>
+        </div>
+        <form action="">
+            <div>
+                <label for="Nome" class="alin1">Nome Completo:</label>
+                <input type="text" nome="nome" size="50" />
+            </div>
+            <div>
+                <label for="email" class="alin">Email:</label>
+                <input type="email" nome="email" size="50" />
+            </div>
+            <div>
+
+                <label for="data">Data de Nascimento:</label>
+                <input type="date" nome="data" size="15" />
+            </div>
+            <div>
+                <label for="login" class="alin">Login:</label>
+                <input type="text" nome="login" size="15" />
+            </div>
+            <div>
+                <label for="senha" class="senha">Senha:</label>
+                <input type="password" nome="senha" size="15" />
+            </div>
+            <div>
+                <label for="estado" class="estado">Estado:</label>
+                <select name="" id="">
+                    <option value="">Estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+            <div>
+                <p>Faixa Etária:</p>
+                <input type="checkbox" id="menor18" name="menor18">
+                <label for="html">Menor ou igual a 18 anos</label><br>
+                <input type="checkbox" id="maior18" name="maior18">
+                <label for="maior18">Maior de 18 anos</label><br>
+            </div>
+
+            <div class="div-buttons">
+                <p>
+                    <input id="buttons-reset" type="submit" value="Cadastrar" />
+                    <input id="buttons-reset" type="reset" value="Limpar" />
+                </p>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+<script>
+
+    const menor18 = document.querySelector('#menor18')
+    const maior18 = document.querySelector('#maior18')
+
+    menor18.onclick = () => {
+        maior18.checked = false
+    }
+    maior18.onclick = () => {
+        menor18.checked = false
+    }
+
+</script>
+
+</html>
